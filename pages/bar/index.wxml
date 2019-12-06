@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="top">
+    <view wx:for="{{tab}}" bindtap="click" data-index="{{index}}" class="{{ showIndex == index ? 'active' : 'default' }}">{{item}}</view>
+  </view>
+  <ec-canvas wx:if="{{showIndex == 0}}" id="mychart-dom-sector" canvas-id="mychart-sector" ec="{{ sector }}"></ec-canvas>
+  <ec-canvas wx:if="{{showIndex == 1}}" id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ bar }}"></ec-canvas>
+  <ec-canvas wx:if="{{showIndex == 2}}" id="mychart-dom-line" class='mychart-line' canvas-id="mychart-line" ec="{{ zhexian }}"></ec-canvas>
+</view>

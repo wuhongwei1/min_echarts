@@ -1,0 +1,20 @@
+/**index.wxss**/
+.top{
+  width: 60%;
+  margin: 28rpx auto;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-around;
+}
+.active{
+  color:darkseagreen;
+}
+.default{
+  color: black;
+}
+
+ec-canvas {
+  width: 90%;
+  height: 60%;
+}
+
